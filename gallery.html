@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Scented Flower</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/scentedflower.css">
+    <!-- Custom Fonts -->
+    <link href="css/mycss.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-rtl.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.lightbox-0.5.css">
+    <!--footer-->
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <style type="text/css">
+    	/*--------------------------------*/
+/***** Portfolio Common style *****/
+/*--------------------------------*/
+body{
+	background-color:#2C2D32;
+}
+.nav.navbar-nav li .page-scroll.text-right {
+	color:white;
+}
+.nav.navbar-nav li .page-scroll.text-right:hover {
+	background-color:#ABCBF1;
+}
+
+.navbar-custom.top-nav-collapse li .page-scroll.text-right:hover {
+        background-color:#D85943;
+		
+    }
+	
+	.navbar-custom.top-nav-collapse ul li a{
+		color:black !important;
+	}
+.nav.navbar-nav li #whiterose {
+	position:absolute;
+	right:-0.1px;
+}
+
+navbar-custom.top-nav-collapse li #whiterose{
+	visibility:hidden !important;
+}
+
+
+.grid {
+	position: relative;
+	clear: both;
+	margin: 0 auto;
+	padding: 1em 0 4em;
+	max-width: 100%;
+	list-style: none;
+	text-align: center;
+}
+
+.grid h2{
+    font-size: 20px;
+}
+
+.grid figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 10px 1%;
+	min-width: 100%;
+	max-width: 100%;
+	height: auto;
+	
+	text-align: center;
+	cursor: pointer;
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	min-height: auto;
+	max-width: 100%;
+	opacity: 0.8;
+}
+
+.grid figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.grid figure figcaption h2{
+	font-size:25px;
+}
+.grid figure figcaption p{
+	font-size:15px;
+	font-weight:bold;
+}
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.grid figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+.grid figure h2 span {
+	font-weight: 800;
+	
+}
+
+.grid figure h2,
+.grid figure p {
+	margin: 0;
+}
+
+.grid figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+/*---------------*/
+/***** Bubba *****/
+/*---------------*/
+
+figure.effect-bubba {
+	
+	
+}
+
+figure.effect-bubba img {
+	opacity: 1.0;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+}
+
+figure.effect-bubba:hover img {
+	opacity: 0.4;
+}
+
+figure.effect-bubba figcaption::before,
+figure.effect-bubba figcaption::after {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	bottom: 30px;
+	left: 30px;
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-bubba figcaption::before {
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+
+figure.effect-bubba figcaption::after {
+	border-right: 1px solid #fff;
+	border-left: 1px solid #fff;
+	-webkit-transform: scale(1,0);
+	transform: scale(1,0);
+}
+
+figure.effect-bubba h2 {
+	padding-top: 10%;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,-20px,0);
+	transform: translate3d(0,-20px,0);
+    color: #fff;
+}
+
+figure.effect-bubba p {
+	padding: 20px 2.5em;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(0,20px,0);
+	transform: translate3d(0,20px,0);
+}
+
+figure.effect-bubba:hover figcaption::before,
+figure.effect-bubba:hover figcaption::after {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+figure.effect-bubba:hover h2,
+figure.effect-bubba:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+/*-----------------------*/
+/***** Quote Rotator *****/
+/*-----------------------*/
+
+.pfblock {
+	padding: 120px 0 100px;
+	color:white;
+}
+.pfblock-header {
+	text-align: center;
+	margin: 0 0 60px;
+}
+
+.pfblock-header-left .pfblock-line {
+	width: inherit;
+	margin: 30px 0;
+	
+}
+
+.pfblock-title{
+    font-weight: 800;
+	color:white;
+}
+
+.pfblock-subtitle {
+	font-family: Raleway, "Times New Roman", Times, sans-serif;
+	font-style: normal;
+	font-size: 18px;
+}
+
+.pfblock-line {
+	background-color:#ABCBF1;
+	width: 100px;
+	height: 1px;
+	margin: 30px auto;
+}
+
+ /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+@import url(http://fonts.googleapis.com/css?family=Raleway+Dots);
+@import url(http://fonts.googleapis.com/css?family=Advent+Pro:400,200,700);
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+section #services {
+  text-align: center;
+  transform: translatez(0);
+  margin-bottom:30px;
+}
+
+section #services li {
+  width:60px;
+  height:60px;
+  display:inline-block;
+  margin:15px;
+  list-style: none;
+}
+section #services li div {
+  width:60px;
+  height:60px;
+  color:white;
+  font-size: 3.4em;
+  text-align: center;
+  line-height:60px;
+  background-color:#1E1B24;
+  transition: all 0.5s ease;
+}
+section #services li div:hover {
+  transform: rotate(360deg);
+  border-radius: 100px;
+}
+
+
+section #services li:hover{
+	background-color:#FFF6C6;
+	
+}
+section #services li:hover div{
+	background-color:#AB2A2A;
+	
+}
+
+section #services a{
+	outline:0;
+}
+    </style>
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+              <div class="row"> 
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse col-sm-11">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    
+               		<li style="margin-top:10px;">
+                        <img class="img-responsive page-scroll pull-right" src="img/rose11.png">
+                        <img class="img-responsive page-scroll pull-right" src="img/rosewhite.png" id="whiterose">         
+                        
+                    </li>
+                    <li>
+                        <a class="page-scroll text-right" href="index.html">خانه</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll text-right" href="index.html#hr1">درباره ما</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll text-right" href="index.html#hr2">سرفصل خبرها</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll text-right" href="index.html#loginline">ورود</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll text-right" href="index.html#contact">تماس با ما</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll text-right" href="product.html">محصولات</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll text-right" href="#contact">گالری</a>
+                    </li>
+                   <li>
+                        <a class="page-scroll text-right" href="custom flower.html">گل های سفارشی</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll text-right" href="news.html">اخبار</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll text-right" href="know about.html">دانستنی ها</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+            
+            <div class="navbar-header col-sm-1">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top" id="brand">
+                 
+                    <img src="img/nature61.png" id="nature2" alt="brand"/>
+                    <img src="img/nature60.png" id="nature1" alt="brand"/>
+                    
+               
+                </a>
+                 </div>
+            </div>
+            
+        </div>
+        <!-- /.container -->
+    </nav>
+
+	<!--gallery-->
+    <section id="portfolio" class="pfblock">
+        <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3">
+    
+                            <div class="pfblock-header wow fadeInUp">
+                                <h2 class="pfblock-title">معرفی انواع گل ها</h2>
+                                <div class="pfblock-line"></div>
+                                <div class="pfblock-subtitle">
+                                	برای مشاهده اندازه بزرگ تر هر عکس روی آن کلیک کنید
+                                </div>
+                            </div>
+    
+                        </div>
+    
+                    </div>
+            <!-- .row -->
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <div class="grid wow bounceInUp">
+                      <figure class="effect-bubba lightb">
+                      
+                        <a href="img/flower's types/1-1.jpg"><img src="img/flower's types/1.jpg" alt="دریسی"></a>
+                        <figcaption>
+                          <h2>ادریسی</h2>
+                          <p> استقامت و ثبات قدمی</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <div class="grid wow bounceInUp">
+                      <figure class="effect-bubba">
+                            <a href="img/flower's types/2-2.jpg"><img src="img/flower's types/2.jpg" alt="ارکیده"></a>
+                        <figcaption>
+                          <h2>ارکیده</h2>
+                          <p>زیبایی لطیف</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <div class="grid wow bounceInUp">
+                      <figure class="effect-bubba">
+                            <a href="img/flower's types/3-3.jpg"><img src="img/flower's types/3.jpg" alt="آزالیا"></a>
+                        <figcaption>
+                          <h2>آزالیا</h2>
+                          <p>نعمت و باروری</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <div class="grid wow bounceInUp">
+                      <figure class="effect-bubba">
+                            <a href="img/flower's types/4-4.jpg"><img src="img/flower's types/4.jpg" alt="اسطوخودوس"></a>
+                        <figcaption>
+                          <h2>اسطوخودوس</h2>
+                          <p>سوءظن و بدگمانی</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="row">              
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <div class="grid wow zoomIn">
+                      <figure class="effect-bubba">
+                            <a href="img/flower's types/5-5.jpg"><img src="img/flower's types/5.gif" alt="اشرفی (دگمه ای)"></a>
+                        <figcaption>
+                          <h2>اشرفی (دگمه ای)</h2>
+                          <p>انتظار داشتن</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <div class="grid wow zoomIn">
+                      <figure class="effect-bubba">
+                            <a href="img/flower's types/6-6.jpg"><img src="img/flower's types/6.jpg" alt="آفتابگردان"></a>
+                        <figcaption>
+                          <h2>آفتابگردان</h2>
+                          <p>ستایش و عشق ورزی</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <div class="grid wow zoomIn">
+                      <figure class="effect-bubba">
+                            <a href="img/flower's types/7-7.jpg"><img src="img/flower's types/7.jpg" alt="اآهار"></a>
+                        <figcaption>
+                          <h2>آهار</h2>
+                          <p>ه فکر دوستان بودن</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <div class="grid wow zoomIn">
+                      <figure class="effect-bubba">
+                            <a href="img/flower's types/8-8.jpg"><img src="img/flower's types/8.jpg" alt="بگونیا"></a>
+                        <figcaption>
+                          <h2>بگونیا</h2>
+                          <p>در فکری عمیق بودن</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                </div>
+             </div>
+            <div class="row"> 
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <div class="grid wow zoomIn">
+                      <figure class="effect-bubba">
+                            <a href="img/flower's types/9-9.jpg"><img src="img/flower's types/9.jpg" alt="بنفشه"></a>
+                        <figcaption>
+                          <h2>بنفشه</h2>
+                          <p>وفاداری و صداقت</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <div class="grid wow zoomIn">
+                      <figure class="effect-bubba">
+                            <a href="img/flower's types/10-10.jpg"><img src="img/flower's types/10.jpg" alt="بنفشه فرنگی"></a>
+                        <figcaption>
+                          <h2>بنفشه فرنگی</h2>
+                          <p> فکر عاشقانه</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                </div>            
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <div class="grid wow zoomIn">
+                      <figure class="effect-bubba">
+                            <a href="img/flower's types/11-11.jpg"><img src="img/flower's types/11.jpg" alt="بومادران"></a>
+                        <figcaption>
+                          <h2>بومادران</h2>
+                          <p>تندرستی</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <div class="grid wow zoomIn">
+                      <figure class="effect-bubba">
+                            <a href="img/flower's types/12-12.jpg"><img src="img/flower's types/12.jpg" alt="پیچک"></a>
+                        <figcaption>
+                          <h2>پیچک</h2>
+                          <p>وفاداری</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                </div>
+             </div> 
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <div class="grid wow zoomIn">
+                      <figure class="effect-bubba">
+                            <a href="img/flower's types/13-13.jpg"><img src="img/flower's types/13.jpg" alt="جوز کوثل"></a>
+                        <figcaption>
+                          <h2>جوز کوثل</h2>
+                          <p>شادمانی و لذت</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <div class="grid wow zoomIn">
+                      <figure class="effect-bubba">
+                            <a href="img/flower's types/14.jpg"><img src="img/flower's types/14.jpg" alt="خشخاشا"></a>
+                        <figcaption>
+                          <h2>خشخاش</h2>
+                          <p>دلداری و دلجویی</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <div class="grid wow zoomIn">
+                      <figure class="effect-bubba">
+                            <a href="img/flower's types/15.jpg"><img src="img/flower's types/15.jpg" alt="خلنگ"></a>
+                        <figcaption>
+                          <h2> خلنگه</h2>
+                          <p>تنهایی و گوشه نشینی</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <div class="grid wow zoomIn">
+                      <figure class="effect-bubba">
+                            <a href="img/flower's types/16-16.jpeg"><img src="img/flower's types/16.jpeg" alt="داوودی زرد"></a>
+                        <figcaption>
+                          <h2>داوودی زرد</h2>
+                          <p>تحسین پنهانی</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                </div>
+             </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <div class="grid wow zoomIn">
+                      <figure class="effect-bubba">
+                            <a href="img/flower's types/17-17.jpg"><img src="img/flower's types/17.jpg" alt="رازقی"></a>
+                        <figcaption>
+                          <h2>رازقی</h2>
+                          <p> سرزندگی</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <div class="grid wow zoomIn">
+                      <figure class="effect-bubba">
+                            <a href="img/flower's types/18-18.jpg"><img src="img/flower's types/18.jpg" alt="رز زرد"></a>
+                        <figcaption>
+                          <h2>رز زرد</h2>
+                          <p>ذوق و شوق</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <div class="grid wow zoomIn">
+                      <figure class="effect-bubba">
+                            <a href="img/flower's types/19-19.jpg"><img src="img/flower's types/19.jpg" alt="زبان در قفا"></a>
+                        <figcaption>
+                          <h2>زبان در قف</h2>
+                          <p>بی باکی و تهور</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <div class="grid wow zoomIn">
+                      <figure class="effect-bubba">
+                            <a href="img/flower's types/20-20.jpg"><img src="img/flower's types/20.jpeg" alt="زعفران"></a>
+                        <figcaption>
+                          <h2>زعفران</h2>
+                          <p>دوراندیشی و بصیرت</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                </div>       
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <div class="grid wow zoomIn">
+                      <figure class="effect-bubba">
+                            <a href="img/flower's types/21-21.png"><img src="img/flower's types/21.jpg" alt="زنبق"></a>
+                        <figcaption>
+                          <h2>زنبق</h2>
+                          <p>الهام بخش</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <div class="grid wow zoomIn">
+                      <figure class="effect-bubba">
+                            <a href="img/flower's types/22-22.jpg"><img src="img/flower's types/22.jpg" alt="زنجبیل"></a>
+                        <figcaption>
+                          <h2>زنجبیل</h2>
+                          <p>افتخار</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <div class="grid wow zoomIn">
+                      <figure class="effect-bubba">
+                            <a href="img/flower's types/23-23.jpg"><img src="img/flower's types/23.jpg" alt="ساعت"></a>
+                        <figcaption>
+                          <h2>ساعت</h2>
+                          <p>علاقه شدید و شهوت</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <div class="grid wow zoomIn">
+                      <figure class="effect-bubba">
+                            <a href="img/flower's types/24-24.jpg"><img src="img/flower's types/24.jpg" alt="ستاره ای"></a>
+                        <figcaption>
+                          <h2>ستاره ای</h2>
+                          <p> آرامش و راحتی</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                </div>       
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <div class="grid wow zoomIn">
+                      <figure class="effect-bubba">
+                            <a href="img/flower's types/25-25.jpg"><img src="img/flower's types/25.jpg" alt="سنبل"></a>
+                        <figcaption>
+                          <h2>سنبل</h2>
+                          <p>صداقت و خلوص</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <div class="grid wow zoomIn">
+                      <figure class="effect-bubba">
+                            <a href="img/flower's types/26-26.jpg"><img src="img/flower's types/26.jpg" alt="سوسن"></a>
+                        <figcaption>
+                          <h2>سوسن</h2>
+                          <p>تشویق و دلگرمی</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <div class="grid wow zoomIn">
+                      <figure class="effect-bubba">
+                            <a href="img/flower's types/27-27.jpg"><img src="img/flower's types/27.jpg" alt="سیف الغراب(گلایول)"></a>
+                        <figcaption>
+                          <h2>سیف الغراب(گلایول)</h2>
+                          <p> شخصیت محکم</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <div class="grid wow zoomIn">
+                      <figure class="effect-bubba">
+                            <a href="img/flower's types/28-28.jpg"><img src="img/flower's types/28.jpg" alt="شکوفه سیب"></a>
+                        <figcaption>
+                          <h2>شکوفه سیب</h2>
+                          <p>وفای به عهد</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                </div>       
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <div class="grid wow zoomIn">
+                      <figure class="effect-bubba">
+                            <a href="img/flower's types/29-29.jpg"><img src="img/flower's types/29.jpg" alt="شمعدانی"></a>
+                        <figcaption>
+                          <h2>شمعدانی</h2>
+                          <p>آسایش و دلخوشی</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <div class="grid wow zoomIn">
+                      <figure class="effect-bubba">
+                            <a href="img/flower's types/30-30.png"><img src="img/flower's types/30.jpg" alt="شیپوری"></a>
+                        <figcaption>
+                          <h2>شیپوری</h2>
+                          <p>شاهانه بودن</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <div class="grid wow zoomIn">
+                      <figure class="effect-bubba">
+                            <a href="img/flower's types/31.jpg"><img src="img/flower's types/31.jpg" alt="صدتومانی"></a>
+                        <figcaption>
+                          <h2>صدتومانی</h2>
+                          <p>شفا و بهبودی</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <div class="grid wow zoomIn">
+                      <figure class="effect-bubba">
+                            <a href="img/flower's types/32.jpg"><img src="img/flower's types/32.jpg" alt="عطرشاهی"></a>
+                        <figcaption>
+                          <h2>عطرشاهی</h2>
+                          <p>کمرویی</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                </div>       
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <div class="grid wow zoomIn">
+                      <figure class="effect-bubba">
+                            <a href="img/flower's types/33-33.jpg"><img src="img/flower's types/33.jpg" alt="لاله صورتی"></a>
+                        <figcaption>
+                          <h2>لاله صورتی</h2>
+                          <p>در فکر یار بودن</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <div class="grid wow zoomIn">
+                      <figure class="effect-bubba">
+                            <a href="img/flower's types/34-34.jpg"><img src="img/flower's types/34.jpg" alt="لاله قرمز"></a>
+                        <figcaption>
+                          <h2>لاله قرمز</h2>
+                          <p>اعلان عشق</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <div class="grid wow zoomIn">
+                      <figure class="effect-bubba">
+                            <a href="img/flower's types/35-35.jpg"><img src="img/flower's types/35.jpg" alt="لاله زرد"></a>
+                        <figcaption>
+                          <h2>لاله زرد</h2>
+                          <p>نومیدی در عشق</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <div class="grid wow zoomIn">
+                      <figure class="effect-bubba">
+                            <a href="img/flower's types/36-36.jpg"><img src="img/flower's types/36.jpg" alt="ماگنولیا"></a>
+                        <figcaption>
+                          <h2>ماگنولیا</h2>
+                          <p>احترام و جلال</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                </div>       
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <div class="grid wow zoomIn">
+                      <figure class="effect-bubba">
+                            <a href="img/flower's types/37-37.jpg"><img src="img/flower's types/37.jpg" alt=" گل مرا فراموش مکن"></a>
+                        <figcaption>
+                          <h2>گل مرا فراموش مکن</h2>
+                          <p>مرا تا ابد به یاد داشته باش</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <div class="grid wow zoomIn">
+                      <figure class="effect-bubba">
+                            <a href="img/flower's types/38-38.jpg"><img src="img/flower's types/38.jpg" alt="مرواریدی"></a>
+                        <figcaption>
+                          <h2>مرواریدی</h2>
+                          <p>ابی ریایی و سادگی</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <div class="grid wow zoomIn">
+                      <figure class="effect-bubba">
+                            <a href="img/flower's types/39-39.png"><img src="img/flower's types/39.jpg" alt="مریم"></a>
+                        <figcaption>
+                          <h2>مریم</h2>
+                          <p>مسرت و خوشی از عشق دلخواه/ خوشگذرانی</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <div class="grid wow zoomIn">
+                      <figure class="effect-bubba">
+                            <a href="img/flower's types/40.jpg"><img src="img/flower's types/40.jpg" alt="معین التجاری"></a>
+                        <figcaption>
+                          <h2>معین التجاریا</h2>
+                          <p>حذر کردن</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                </div>       
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <div class="grid wow zoomIn">
+                      <figure class="effect-bubba">
+                            <a href="img/flower's types/41-41.jpg"><img src="img/flower's types/41.jpg" alt="میخک صورتی"></a>
+                        <figcaption>
+                          <h2>میخک صورتی</h2>
+                          <p>قدردانی</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <div class="grid wow zoomIn">
+                      <figure class="effect-bubba">
+                            <a href="img/flower's types/42-42.png"><img src="img/flower's types/42.jpg" alt="میخک قرمز"></a>
+                        <figcaption>
+                          <h2>میخک قرمز</h2>
+                          <p>جلوه گری</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <div class="grid wow zoomIn">
+                      <figure class="effect-bubba">
+                            <a href="img/flower's types/43.jpg"><img src="img/flower's types/43.jpg" alt="میخک زرد"></a>
+                        <figcaption>
+                          <h2>میخک زرد</h2>
+                          <p>بشاشی و امیدواری</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <div class="grid wow zoomIn">
+                      <figure class="effect-bubba">
+                            <a href="img/flower's types/44-44.jpg"><img src="img/flower's types/44.jpg" alt="میمون"></a>
+                        <figcaption>
+                          <h2>میمون</h2>
+                          <p>غرور و گستاخی</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                </div>       
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <div class="grid wow zoomIn">
+                      <figure class="effect-bubba">
+                            <a href="img/flower's types/45-45.jpg"><img src="img/flower's types/45.jpg" alt="  مینا"></a>
+                        <figcaption>
+                          <h2>مینا</h2>
+                          <p>خرسندی</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <div class="grid wow zoomIn">
+                      <figure class="effect-bubba">
+                            <a href="img/flower's types/46-46.jpg"><img src="img/flower's types/46.jpg" alt="نرگس"></a>
+                        <figcaption>
+                          <h2>نرگس</h2>
+                          <p>عشقی شگرف و پرشور،‌ دراماتیک</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <div class="grid wow zoomIn">
+                      <figure class="effect-bubba">
+                            <a href="img/flower's types/47-47.jpg"><img src="img/flower's types/47.jpg" alt="همیشه بهار"></a>
+                        <figcaption>
+                          <h2>همیشه بهار</h2>
+                          <p> آرزوی توانگری و دولتمندی</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <div class="grid wow zoomIn">
+                      <figure class="effect-bubba">
+                        <a href="img/flower's types/48-48.jpg"><img src="img/flower's types/48.jpg" alt="یاس"></a>
+                        <figcaption>
+                          <h2>یاس</h2>
+                          <p>زیبایی و خوش پوشی</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                </div>       
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <div class="grid wow zoomIn">
+                      <figure class="effect-bubba">
+                            <a href="img/flower's types/49-491.jpg"><img src="img/flower's types/49.jpg" alt="یاس کبود"></a>
+                        <figcaption>
+                          <h2>یاس کبود</h2>
+                          <p>شق اول</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <div class="grid wow zoomIn">
+                      <figure class="effect-bubba">
+                            <a href="img/flower's types/49-49.jpg"><img src="img/flower's types/49.jpg" alt="نرگس"></a>
+                        <figcaption>
+                          <h2>نرگس</h2>
+                          <p>عشقی شگرف و پرشور،‌ دراماتیک</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <div class="grid wow zoomIn">
+                      <figure class="effect-bubba">
+                            <a href="img/flower's types/49-491.jpg"><img src="img/flower's types/49.jpg" alt="یاس کبود"></a>
+                        <figcaption>
+                          <h2>یاس کبود</h2>
+                          <p>شق اول</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <div class="grid wow zoomIn">
+                      <figure class="effect-bubba">
+                            <a href="img/flower's types/49-49.jpg"><img src="img/flower's types/49.jpg" alt="نرگس"></a>
+                        <figcaption>
+                          <h2>نرگس</h2>
+                          <p>عشقی شگرف و پرشور،‌ دراماتیک</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                </div>           
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer -->
+	<footer>
+	<div class="container-fluid" style="margin-top:50px; background-color:#FFF6D8;">
+    	<div class="row">
+        	<section style="margin-top:40px;">
+  <ul id="services">
+  <a href="www.facebook.com" target="_blank">
+    <li>
+      <div class="entypo-facebook"></div> 
+    </li>
+  </a>
+  <a href="www.twitter.com" target="_blank">
+    <li>
+      <div class="entypo-twitter"></div>
+      
+    </li>
+  </a>
+  <a href="www.google.com" target="_blank">
+    <li>
+      <div class="entypo-gplus"></div>
+      
+    </li>
+  </a>
+  <a href="www.linkedin.com" target="_blank">
+    <li>
+      <div class="entypo-linkedin"></div>
+      
+    </li>
+  </a>
+  </ul>
+</section>
+        </div>
+    </div>
+</footer>
+	
+
+
+<!-- jQuery -->
+    <script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+	<script src="js/wow.min.js"></script>
+    <script src="js/jquery.lightbox-0.5.min.js"></script>
+<script>
+$(document).ready(function(e) {
+ 	/* ---------------------------------------------- /*
+		 * WOW Animation When You Scroll
+		/* ---------------------------------------------- */
+
+		wow = new WOW({
+			mobile: false
+		});
+		wow.init();
+		
+		
+		/* lightbox*/
+		$(".row .col-xs-12.col-sm-3.col-md-3 .grid.wow.bounceInUp .effect-bubba.lightb a").lightBox({
+			
+				imageLoading:'img/loading.gif',
+				imageBtnClose:'img/close.gif',
+				imageBtnNext:'img/lightbox-btn-next.gif',
+				imageBtnPrev:'img/lightbox-btn-prev.gif'
+			});
+});
+	
+</script>
+
+</body>
+
+</html>

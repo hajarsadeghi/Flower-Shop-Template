@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Scented Flower</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-rtl.css">
+	 <!-- Custom Fonts -->
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/scentedflower.css">
+	<link href="css/mycss.css" rel="stylesheet" type="text/css">
+    
+	<!--vote
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+    -->
+    <!--pagination-->
+    <link href="css/pagination.css" rel="stylesheet" type="text/css">
+    <!--footer-->
+	<link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    
+    
+    
+  
+	<style>
+
+@charset "utf-8";
+	
+	body{
+	margin:0px;
+	padding:0px;
+	
+	
+	
+}
+
+.container-fluid .row .list-unstyled{
+	margin-top:100px;
+}
+.container-fluid .row .list-unstyled .rightmenue{
+	width:200px;
+	background-color:rgba(245,208,209,1.00);
+	text-align:center;
+	overflow:hidden;
+	height:30px;
+
+}
+.container-fluid .row .list-unstyled .rightmenue.color1{
+	background-color:#574946;
+	
+}
+.container-fluid .row .list-unstyled .rightmenue.color2{
+	background-color:#E58B82;
+}
+.container-fluid .row .list-unstyled .rightmenue p{
+	display:block;
+	width:200px;
+	height:30px;
+	line-height:30px;
+	
+	
+}
+.container-fluid .row .list-unstyled .rightmenue.color1 p:hover{
+	background-color:rgba(229,132,130,0.5);
+	cursor:pointer;
+	
+}
+
+.container-fluid .row .list-unstyled .rightmenue.color2 p:hover{
+	background-color:rgba(87,73,70,70);
+	cursor:pointer;
+	color:white;
+}
+.container-fluid .row .list-unstyled .rightmenue a{
+	width:100%;
+	text-decoration:none;
+	color:black;
+	font-size:18px;
+	
+}
+
+.container-fluid .row .product.col-xs-12.col-sm-10 {
+	margin-top:100px;
+}
+.container-fluid .row .product .artcl{
+	height:380px;
+	background-color:rgba(189,153,128,1.00);
+	box-shadow:2px 2px 8px 3px rgba(189,153,128,1.00);
+	
+}
+.container-fluid .row .product .artcl figure img{
+	margin-top:10px;
+	margin-right:22px;
+	border:1px solid rgba(98,0,1,1.00);
+}
+
+.container-fluid .row .product .artcl figure figcaption p{
+	margin-top:10px;
+}
+.container-fluid .row .product .artcl figure figcaption .detailbtn{
+	font-weight:bold;
+	margin-top:20px;
+	margin-right:75px;
+	background-color:#382220;
+	color:white;
+	border:none;
+	transition:all 1s ease-in-out;
+	-moz-transition:all 1s ease-in-out;
+	-ms-transition:all 1s ease-in-out;
+	-o-transition:all 1s ease-in-out;
+	-webkit-transition:all 1s ease-in-out;
+}
+.container-fluid .row .product .artcl figure figcaption .detailbtn:hover{
+	background-color:rgb(172,44,44);
+	color:black;
+	
+	
+}
+
+.modal-body .container-fluid .row section p{
+	font-size:15px;
+}
+.modal-body .container-fluid .row section .code {
+	width:70px;
+	height:25px;
+	border:1px solid rgba(53,3,4,1.00);
+	background-color:#BD9980;
+	text-align:center;
+	line-height:25px;
+	
+}
+.modal-content .modal-footer .btn.btn-default {
+	background-color:#AB2A2A;
+	color:white;
+	
+	font-weight:bold;
+}
+.modal-content .modal-footer .close {
+	background-color:#BBCFB7 !important;
+	
+	
+}
+
+
+
+
+
+
+@media (min-width:1200px){
+.container-fluid .row .pull-left {
+	
+	margin-top:-0.1px;
+	
+}
+.container-fluid .row .pull-left #code{
+	margin-top:-65px;
+	margin-right:70px;
+	text-align:center;
+	line-height:25px;
+}
+}
+/*vote
+.vote {
+  width: 80px;
+  height: 80px;
+  background: #3498db;
+  text-align: center;
+  margin-top:0px;!important
+  color: #fff;
+  -webkit-transition: all .4s ease;
+          transition: all .4s ease;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  cursor: pointer;
+}
+.vote:hover {
+  background: #5faee3;
+}
+.vote:active {
+  background: #217dbb;
+}
+.vote .text {
+  font: 20px/80px 'Lato', Helvetica, sans-serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  display: block;
+  width: 80px;
+  height: 80px;
+}
+.vote .like, .vote .dislike {
+  line-height: 80px;
+  font-size: 40px;
+  -webkit-transition: all .4s ease;
+          transition: all .4s ease;
+  cursor: pointer;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -10;
+}
+.vote .like {
+  background: #2ecc71;
+}
+.vote .like:hover {
+  background: #54d98c;
+}
+.vote .like:active {
+  background: #25a25a;
+}
+.vote .like:after {
+  content: attr(data-likes);
+  font-family: 'Lato', Helvetica, sans-serif;
+  font-size: 12px;
+  display: block;
+  width: 80px;
+  height: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  line-height: 20px;
+  -webkit-transform: translate(0, -20px);
+      -ms-transform: translate(0, -20px);
+          transform: translate(0, -20px);
+  opacity: 0;
+  position: absolute;
+  -webkit-transition: all .4s ease;
+          transition: all .4s ease;
+}
+.vote .like:hover:after {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+.vote .like:before {
+  content: 'Like';
+  font-family: 'Lato', Helvetica, sans-serif;
+  font-size: 12px;
+  display: block;
+  width: 80px;
+  height: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  line-height: 20px;
+  opacity: 0;
+  position: absolute;
+  -webkit-transition: all .4s ease;
+          transition: all .4s ease;
+}
+.vote .like:hover:before {
+  opacity: 1;
+  -webkit-transform: translate(0, -20px);
+      -ms-transform: translate(0, -20px);
+          transform: translate(0, -20px);
+}
+.vote .dislike {
+  background: #c0392b;
+}
+.vote .dislike:hover {
+  background: #d65548;
+}
+.vote .dislike:active {
+  background: #962d22;
+}
+.vote .dislike:after {
+  content: attr(data-dislikes);
+  font-family: 'Lato', Helvetica, sans-serif;
+  font-size: 12px;
+  display: block;
+  width: 80px;
+  height: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  line-height: 20px;
+  -webkit-transform: translate(0, -20px);
+      -ms-transform: translate(0, -20px);
+          transform: translate(0, -20px);
+  opacity: 0;
+  position: absolute;
+  -webkit-transition: all .4s ease;
+          transition: all .4s ease;
+}
+.vote .dislike:hover:after {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+.vote .dislike:before {
+  content: 'Dislike';
+  font-family: 'Lato', Helvetica, sans-serif;
+  font-size: 12px;
+  display: block;
+  width: 80px;
+  height: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  line-height: 20px;
+  opacity: 0;
+  position: absolute;
+  -webkit-transition: all .4s ease;
+          transition: all .4s ease;
+}
+.vote .dislike:hover:before {
+  opacity: 1;
+  -webkit-transform: translate(0, -20px);
+      -ms-transform: translate(0, -20px);
+          transform: translate(0, -20px);
+}
+
+.like_active {
+  -webkit-transform: translate(-80px, 0px);
+      -ms-transform: translate(-80px, 0px);
+          transform: translate(-80px, 0px);
+}
+
+.dislike_active {
+  -webkit-transform: translate(80px, 0px);
+      -ms-transform: translate(80px, 0px);
+          transform: translate(80px, 0px);
+}
+
+vote*/
+
+/*footer*/
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+@import url(http://fonts.googleapis.com/css?family=Raleway+Dots);
+@import url(http://fonts.googleapis.com/css?family=Advent+Pro:400,200,700);
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+section #services {
+  text-align: center;
+  transform: translatez(0);
+  margin-bottom:30px;
+}
+
+section #services li {
+  width:60px;
+  height:60px;
+  display:inline-block;
+  margin:15px;
+  list-style: none;
+}
+section #services li div {
+  width:60px;
+  height:60px;
+  color:white;
+  font-size: 3.4em;
+  text-align: center;
+  line-height:60px;
+  background-color:#1E1B24;
+  transition: all 0.5s ease;
+}
+section #services li div:hover {
+  transform: rotate(360deg);
+  border-radius: 100px;
+}
+
+
+section #services li:hover{
+	background-color:#FFF6C6;
+	
+}
+section #services li:hover div{
+	background-color:#AB2A2A;
+	
+}
+
+section #services a{
+	outline:0;
+}
+/*footer*/
+
+    </style>
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+              <div class="row"> 
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse col-sm-11">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    
+               		<li style="margin-top:10px;">
+                        <img class="img-responsive page-scroll pull-right" src="img/rose11.png">
+                    </li>
+                    <li>
+                        <a class="page-scroll text-right fa-fa-home" href="index.html">خانه</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll text-right" href="index.html#hr1">درباره ما</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll text-right" href="index.html#hr2">سرفصل خبرها</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll text-right" href="index.html#loginline">ورود</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll text-right" href="index.html#contact">تماس با ما</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll text-right" href="product.html">محصولات</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll text-right" href="gallery.html">گالری</a>
+                    </li>
+                   <li>
+                        <a class="page-scroll text-right" href="custom flower.html">گل های سفارشی</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll text-right" href="news.html">اخبار</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll text-right" href="know about.html">دانستنی ها</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+            
+            <div class="navbar-header col-sm-1">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top" id="brand">
+                 
+                    <img src="img/nature61.png" id="nature2" alt="brand"/>
+                    <img src="img/nature60.png" id="nature1" alt="brand"/>
+                    
+               
+                </a>
+                 </div>
+            </div>
+            
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+	<div class="container-fluid">
+    	<div class="row">
+        	<ul class="list-unstyled col-xs-12 col-sm-2">
+            	<li class="rightmenue color1">
+                	<p><a href="#">شاخه گل</a></p>
+                    <p><a href="#">رز</a></p>
+                    <p><a href="#">سایر موارد</a></p>
+                </li>
+                <li class="rightmenue color2">
+                	<p><a href="#">دسته گل</a></p>
+                    <p><a href="#">ترحیم</a></p>
+                    <p><a href="#">تولد</a></p>
+                    <p><a href="#">مراسم شاد</a></p>
+                </li>
+                <li class="rightmenue color1">
+                	<p><a href="#">سبد پایه دار بزرگ</a></p>
+                    <p><a href="#">افتتاحیه</a></p>
+                    <p><a href="#">ترحیم</a></p>
+                    <p><a href="#">مراسم شاد</a></p>
+                </li>
+                <li class="rightmenue color2">
+                	<p><a href="#">سبد روی میز</a></p>
+                    <p><a href="#">ترحیم</a></p>
+                    <p><a href="#">تولد</a></p>
+                    <p><a href="#">مراسم شاد</a></p>
+                </li>
+                <li class="rightmenue color1">
+                	<p><a href="#">سبد گل</a></p>
+                    <p><a href="#">ترحیم</a></p>
+                    <p><a href="#">تولد</a></p>
+                    <p><a href="#">مراسم شاد</a></p>
+                </li>
+                <li class="rightmenue color2">
+                	<p><a href="#">سبد گل و میوه</a></p>
+                    <p><a href="#">سبد گل و میوه</a></p>
+                </li>
+                <li class="rightmenue color1">
+                	<p><a href="#">عروسی</a></p>
+                    <p><a href="#">دسته گل عروس</a></p>
+                </li>
+                <li class="rightmenue color2">
+                	<p><a href="#">گل و شکلات و عروسک</a></p>
+                    <p><a href="#">ولنتاین</a></p>
+                    <p><a href="#">تولد</a></p>
+                    <p><a href="#">مراسم شاد</a></p>
+                </li>
+                <li class="rightmenue color1">
+                	<p><a href="#">گیاهان آپارتمانی</a></p>
+                    <p><a href="#">گیاهان آپارتمانی</a></p>
+                </li>
+                <li class="rightmenue color2">
+                	<p><a href="#">تزیینات متفرقه فانتزی</a></p>
+                    <p><a href="#">ترحیم</a></p>
+                    <p><a href="#">تولد</a></p>
+                    <p><a href="#">مراسم شاد</a></p>
+                </li>       
+            </ul>
+            
+            <section class="product col-xs-12 col-sm-10">
+            
+            	<article class="col-xs-12 col-md-3 artcl" style="margin-right:30px;">
+                	<figure>
+                    
+                       <!--<div class="vote">
+  <span class="text">Vote</span>
+  <div class="like" data-likes="10"><i class="fa fa-thumbs-up"></i></div>  
+  <div class="dislike" data-dislikes="10"><i class="fa fa-thumbs-down"></i></div>
+                       </div>
+                        -->
+                    	<img class="img-responsive" src="img/5e90849d32ecdeeacd584fa63b7ae02a.200x200.jpg" alt="white rose">
+                        <figcaption>
+                        	<p style="text-align:center;">کد : 2525</p>
+                            <p style="text-align:center;">قیمت : 58000 تومان</p>
+                            <button class="btn btn-default detailbtn" type="button" data-toggle="modal" data-target="#myModal">جزییات بیشتر</button>
+                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">کد: 5598</h4>
+      </div>
+      <div class="modal-body">
+      	<div class="container-fluid">
+        	<div class="row">
+        		<img class="zoomin img-responsive pull-right" src="img/www.charlottesfiestaflowers.com.jpg" alt="white rose">
+            	<section class="pull-left col-lg-5">
+            		<p>کد کالا</p><div class="code">6262</div>
+                    <hr>
+                    <p>مناسب: جشن تولد ، سالگرد ازدواج </p>
+                    <hr>
+                    <p>شامل گل های: رز</p>
+                    <hr>
+                    <p>ارتفاع: 30 سانتی متر</p>
+                    <p>عرض: 25 سانتی متر</p>
+                    <hr>
+                    <p>موارد انتخابی:</p>
+                    <form>
+                    	<input type="checkbox">گلدان شیشه ای متوسط (جهت دسته گل) 400000 ريال  
+                        
+                        <select style="margin-right:40px;">
+                        	<optgroup label="تعداد"></optgroup>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </form>
+                    
+            	</section>
+            </div>
+     	 </div>
+      </div>
+      <div class="modal-footer">
+      	<a href="finalize.html" target="_blank" class="btn btn-default">خرید</a>
+        <button type="button" class="btn btn-default close" data-dismiss="modal">بستن</button>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article class="col-xs-12 col-md-3 col-md-offset-1 artcl">
+                	<figure>
+                    	<img class="img-responsive" src="img/B48.jpg" alt="white rose">
+                        <figcaption>
+                        	<p style="text-align:center;">کد: 5598</p>
+                            <p style="text-align:center;">قیمت : 58000 تومان</p>
+                            <button class="btn btn-default detailbtn" type="button" data-toggle="modal" data-target="#myModal2">جزییات بیشتر</button>
+                            <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel2">دسته گل رز سفید</h4>
+      </div>
+      <div class="modal-body">
+      	<div class="container-fluid">
+        	<div class="row">
+        		<img class="zoomin img-responsive pull-right" src="img/www.charlottesfiestaflowers.com.jpg" alt="white rose">
+            	<section class="pull-left col-lg-5">
+            		<p>کد کالا</p><div class="code">6262</div>
+                    <hr>
+                    <p>مناسب: جشن تولد ، سالگرد ازدواج </p>
+                    <hr>
+                    <p>شامل گل های: رز</p>
+                    <hr>
+                    <p>ارتفاع: 30 سانتی متر</p>
+                    <p>عرض: 25 سانتی متر</p>
+                    <hr>
+                    <p>موارد انتخابی:</p>
+                    <form>
+                    	<input type="checkbox">گلدان شیشه ای متوسط (جهت دسته گل) 400000 ريال  
+                        
+                        <select style="margin-right:40px;">
+                        	<optgroup label="تعداد"></optgroup>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </form>
+                    
+            	</section>
+            </div>
+     	 </div>
+      </div>
+      <div class="modal-footer">
+      	<a href="finalize.html" target="_blank" class="btn btn-default">خرید</a>
+        <button type="button" class="btn btn-default close" data-dismiss="modal">بستن</button>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article class="col-xs-12 col-md-3 col-md-offset-1 artcl">
+                	<figure>
+                    	<img class="img-responsive" src="img/200x200_7f416d58dac50503e88a9d7fdec06e0e.jpg" alt="white rose">
+                        <figcaption>
+                        	<p style="text-align:center;">کد: 5598</p>
+                            <p style="text-align:center;">قیمت : 58000 تومان</p>
+                            <button class="btn btn-default detailbtn" type="button" data-toggle="modal" data-target="#myModal3">جزییات بیشتر</button>
+                            <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel3">دسته گل رز سفید</h4>
+      </div>
+      <div class="modal-body">
+      	<div class="container-fluid">
+        	<div class="row">
+        		<img class="zoomin img-responsive pull-right" src="img/www.charlottesfiestaflowers.com.jpg" alt="white rose">
+            	<section class="pull-left col-lg-5">
+            		<p>کد کالا</p><div class="code">6262</div>
+                    <hr>
+                    <p>مناسب: جشن تولد ، سالگرد ازدواج </p>
+                    <hr>
+                    <p>شامل گل های: رز</p>
+                    <hr>
+                    <p>ارتفاع: 30 سانتی متر</p>
+                    <p>عرض: 25 سانتی متر</p>
+                    <hr>
+                    <p>موارد انتخابی:</p>
+                    <form>
+                    	<input type="checkbox">گلدان شیشه ای متوسط (جهت دسته گل) 400000 ريال  
+                        
+                        <select style="margin-right:40px;">
+                        	<optgroup label="تعداد"></optgroup>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </form>
+                    
+            	</section>
+            </div>
+     	 </div>
+      </div>
+      <div class="modal-footer">
+      	<a href="finalize.html" target="_blank" class="btn btn-default">خرید</a>
+        <button type="button" class="btn btn-default close" data-dismiss="modal">بستن</button>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+                        </figcaption>
+                    </figure>
+                </article>
+               
+               	<article class="col-xs-12 col-md-3 artcl" style="margin-right:30px; margin-top:50px;">
+                	<figure>
+                    	<img class="img-responsive" src="img/564.jpg" alt="white rose">
+                        <figcaption>
+                        	<p style="text-align:center;">دکد: 5598</p>
+                            <p style="text-align:center;">قیمت : 58000 تومان</p>
+                            <button class="btn btn-default detailbtn" type="button" data-toggle="modal" data-target="#myModal4">جزییات بیشتر</button>
+                            <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel4">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel4">دسته گل رز سفید</h4>
+      </div>
+      <div class="modal-body">
+      	<div class="container-fluid">
+        	<div class="row">
+        		<img class="zoomin img-responsive pull-right" src="img/www.charlottesfiestaflowers.com.jpg" alt="white rose">
+            	<section class="pull-left col-lg-5">
+            		<p>کد کالا</p><div class="code">6262</div>
+                    <hr>
+                    <p>مناسب: جشن تولد ، سالگرد ازدواج </p>
+                    <hr>
+                    <p>شامل گل های: رز</p>
+                    <hr>
+                    <p>ارتفاع: 30 سانتی متر</p>
+                    <p>عرض: 25 سانتی متر</p>
+                    <hr>
+                    <p>موارد انتخابی:</p>
+                    <form>
+                    	<input type="checkbox">گلدان شیشه ای متوسط (جهت دسته گل) 400000 ريال  
+                        
+                        <select style="margin-right:40px;">
+                        	<optgroup label="تعداد"></optgroup>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </form>
+                    
+            	</section>
+            </div>
+     	 </div>
+      </div>
+      <div class="modal-footer">
+      	<a href="finalize.html" target="_blank" class="btn btn-default">خرید</a>
+        <button type="button" class="btn btn-default close" data-dismiss="modal">بستن</button>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article class="col-xs-12 col-md-3 col-md-offset-1 artcl" style="margin-top:50px;">
+                	<figure>
+                    	<img class="img-responsive" src="img/Enduring-Passion-12-Red-RosesTEV12-7A1-200x200.jpg" alt="white rose">
+                        <figcaption>
+                        	<p style="text-align:center;">کد: 5598</p>
+                            <p style="text-align:center;">قیمت : 58000 تومان</p>
+                            <button class="btn btn-default detailbtn" type="button" data-toggle="modal" data-target="#myModal5">جزییات بیشتر</button>
+                            <div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel5">دسته گل رز سفید</h4>
+      </div>
+      <div class="modal-body">
+      	<div class="container-fluid">
+        	<div class="row">
+        		<img class="zoomin img-responsive pull-right" src="img/www.charlottesfiestaflowers.com.jpg" alt="white rose">
+            	<section class="pull-left col-lg-5">
+            		<p>کد کالا</p><div class="code">6262</div>
+                    <hr>
+                    <p>مناسب: جشن تولد ، سالگرد ازدواج </p>
+                    <hr>
+                    <p>شامل گل های: رز</p>
+                    <hr>
+                    <p>ارتفاع: 30 سانتی متر</p>
+                    <p>عرض: 25 سانتی متر</p>
+                    <hr>
+                    <p>موارد انتخابی:</p>
+                    <form>
+                    	<input type="checkbox">گلدان شیشه ای متوسط (جهت دسته گل) 400000 ريال  
+                        
+                        <select style="margin-right:40px;">
+                        	<optgroup label="تعداد"></optgroup>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </form>
+                    
+            	</section>
+            </div>
+     	 </div>
+      </div>
+      <div class="modal-footer">
+      	<a href="finalize.html" target="_blank" class="btn btn-default">خرید</a>
+        <button type="button" class="btn btn-default close" data-dismiss="modal">بستن</button>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article class="col-xs-12 col-md-3 col-md-offset-1 artcl" style="margin-top:50px;">
+                	<figure>
+                    	<img class="img-responsive" src="img/B46.jpg" alt="white rose">
+                        <figcaption>
+                        	<p style="text-align:center;">کد: 5598</p>
+                            <p style="text-align:center;">قیمت : 58000 تومان</p>
+                            <button class="btn btn-default detailbtn" type="button" data-toggle="modal" data-target="#myModal6">جزییات بیشتر</button>
+                            <div class="modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel6">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel6">دسته گل رز سفید</h4>
+      </div>
+      <div class="modal-body">
+      	<div class="container-fluid">
+        	<div class="row">
+        		<img class="zoomin img-responsive pull-right" src="img/www.charlottesfiestaflowers.com.jpg" alt="white rose">
+            	<section class="pull-left col-lg-5">
+            		<p>کد کالا</p><div class="code">6262</div>
+                    <hr>
+                    <p>مناسب: جشن تولد ، سالگرد ازدواج </p>
+                    <hr>
+                    <p>شامل گل های: رز</p>
+                    <hr>
+                    <p>ارتفاع: 30 سانتی متر</p>
+                    <p>عرض: 25 سانتی متر</p>
+                    <hr>
+                    <p>موارد انتخابی:</p>
+                    <form>
+                    	<input type="checkbox">گلدان شیشه ای متوسط (جهت دسته گل) 400000 ريال  
+                        
+                        <select style="margin-right:40px;">
+                        	<optgroup label="تعداد"></optgroup>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </form>
+                    
+            	</section>
+            </div>
+     	 </div>
+      </div>
+      <div class="modal-footer">
+      	<a href="finalize.html" target="_blank" class="btn btn-default">خرید</a>
+        <button type="button" class="btn btn-default close" data-dismiss="modal">بستن</button>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+                        </figcaption>
+                    </figure>
+                </article>
+            </section>
+         </div>
+       
+    </div>
+    <!--pagination--> 
+    <div class="container-fluid">
+    	<div class="row">
+    		<ul class="pagination modal-3 col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 col-sm-lg col-lg-offset-4">
+  				<li><a href="#" class="prev">&laquo</a></li>
+  				<li><a href="#" class="active">1</a></li>
+  				<li> <a href="#">2</a></li>
+  				<li> <a href="#">3</a></li>
+  				<li> <a href="#">4</a></li>
+  				<li> <a href="#">5</a></li>
+  				<li> <a href="#">6</a></li>
+  				<li> <a href="#">7</a></li>
+  				<li> <a href="#">8</a></li>
+  				<li> <a href="#">9</a></li>
+  				<li><a href="#" class="next">&raquo;</a></li>
+			</ul>
+		</div>
+	</div>
+    <!-- Footer -->
+	<footer>
+	<div class="container-fluid" style="margin-top:50px; background-color:rgb(255,246,216);">
+    	<div class="row">
+        	<section style="margin-top:40px;">
+  <ul id="services">
+  <a href="www.facebook.com" target="_blank">
+    <li>
+      <div class="entypo-facebook"></div> 
+    </li>
+  </a>
+  <a href="www.twitter.com" target="_blank">
+    <li>
+      <div class="entypo-twitter"></div>
+      
+    </li>
+  </a>
+  <a href="www.google.com" target="_blank">
+    <li>
+      <div class="entypo-gplus"></div>
+      
+    </li>
+  </a>
+  <a href="www.linkedin.com" target="_blank">
+    <li>
+      <div class="entypo-linkedin"></div>
+      
+    </li>
+  </a>
+  </ul>
+</section>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+	<script src="js/myjs.js"></script>
+    <script src="js/prefixfree.min.js"></script>
+    
+    <script src="js/jquery.easing.min.js"></script>
+	<script src="js/jquery.elevatezoom.js"></script>
+    <!--<script src="js/vote.js"></script>-->
+    
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+	<script src="js/pagination.js"></script>
+	<script>
+		$(document).ready(function(e) {
+			
+			 $(".list-unstyled").load(function(){
+				$(".list-unstyled").css("height","300px");
+				});
+				
+            $(".rightmenue").mouseover(function(){
+				$(this).stop().animate({height:'120px'},{duration:600,easing:'easeOutBounce'})
+				
+				});
+				
+				$(".rightmenue").mouseout(function(){
+				$(this).stop().animate({height:'30px'},{duration:600,easing:'easeOutBounce'})
+				
+				});
+				
+				$(".zoomin").elevateZoom({
+					
+					zoomType: "lens",
+        			lensShape : "round",
+       			 	lensSize    : 150,
+        			zoomWindowFadeIn: 500,
+        			zoomWindowFadeOut: 500,
+        			lensFadeIn: 500,
+        			lensFadeOut: 500,
+        			scrollZoom : true
+					});
+        });
+	</script>
+    
+
+</body>
+
+</html>

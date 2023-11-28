@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Scented Flower</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-rtl.css">
+	 <!-- Custom Fonts -->
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/scentedflower.css">
+	<link href="css/mycss.css" rel="stylesheet" type="text/css">
+    
+	<!--vote
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+    -->
+    <!--pagination-->
+    <link href="css/pagination.css" rel="stylesheet" type="text/css">
+    <!--footer-->
+	<link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    
+    
+    
+  
+	<style>
+
+@charset "utf-8";
+	
+	body{
+	margin:0px;
+	padding:0px;
+	background-color:#5A4F4C;
+	
+}
+
+
+/*footer*/
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+@import url(http://fonts.googleapis.com/css?family=Raleway+Dots);
+@import url(http://fonts.googleapis.com/css?family=Advent+Pro:400,200,700);
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+section #services {
+  text-align: center;
+  transform: translatez(0);
+  margin-bottom:30px;
+}
+
+section #services li {
+  width:60px;
+  height:60px;
+  display:inline-block;
+  margin:15px;
+  list-style: none;
+}
+section #services li div {
+  width:60px;
+  height:60px;
+  color:white;
+  font-size: 3.4em;
+  text-align: center;
+  line-height:60px;
+  background-color:#1E1B24;
+  transition: all 0.5s ease;
+}
+section #services li div:hover {
+  transform: rotate(360deg);
+  border-radius: 100px;
+}
+
+
+section #services li:hover{
+	background-color:#FFF6C6;
+	
+}
+section #services li:hover div{
+	background-color:#AB2A2A;
+	
+}
+
+section #services a{
+	outline:0;
+}
+/*footer*/
+
+/*know about*/
+
+.row .col-xs-12.col-sm-4.col-md-4.col-lg-4{
+	margin-top:30px;
+}
+    .row .col-xs-12.col-sm-4.col-md-4.col-lg-4 header {
+		width:100%;
+		height:70px;
+		line-height:70px;
+		text-align:center;
+		
+		background-color:#EFC4AA;
+		
+}
+.row .col-xs-12.col-sm-4.col-md-4.col-lg-4 figure{
+	background-color:#403333;
+}
+figure .col-xs-12.col-sm-12.col-md-12.col-lg-12{
+	height:50px;
+	background-color:#EFC4AA;
+}
+figure .btn.btn-default.col-lg-6.col-lg-offset-3 {
+	
+	margin-top:8px;
+	font-weight:bold;
+	border:1px solid #403333;
+	color:#403333;
+}
+.row .col-xs-12.col-sm-4.col-md-4.col-lg-4 figure figcaption p{
+	display:inline-block;
+	font-size:17px;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.col-xs-12.col-sm-4.col-md-4.col-lg-4 figure .img-responsive.col-xs-10.col-xs-offset-1.col-sm-10.col-sm-offset-1.col-md-10.col-md-offset-1.col-lg-10.col-lg-offset-1 {
+	margin-top:10px;
+}
+.row .pagination.modal-3 a:hover {
+	background-color:#F7A765 !important;
+}
+
+.row .pagination.modal-3 a:active {
+	background-color:#120054 !important;
+}
+.modal-content .modal-footer .btn.btn-default {
+	font-weight:bold;
+	border:1px solid background-color:#EFC4AA;;
+	color:#403333;
+}
+.modal-content .modal-footer .btn.btn-default:hover{
+	background-color:#EFC4AA;
+}
+
+
+@media(max-width:768px){
+	.row .col-xs-12.col-sm-4.col-md-4.col-lg-4 header{
+		width:80%;
+		margin-right:10%;
+	}
+	.row .col-xs-12.col-sm-4.col-md-4.col-lg-4 figure{
+		width:80%;
+		margin-right:10%;
+	}
+	
+}
+    </style>
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+              <div class="row"> 
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse col-sm-11">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    
+               		<li style="margin-top:10px;">
+                        <img class="img-responsive page-scroll pull-right" src="img/rose11.png">
+                    </li>
+                    <li>
+                        <a class="page-scroll text-right fa-fa-home" href="index.html">خانه</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll text-right" href="index.html#hr1">درباره ما</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll text-right" href="index.html#hr2">سرفصل خبرها</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll text-right" href="index.html#loginline">ورود</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll text-right" href="index.html#contact">تماس با ما</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll text-right" href="product.html">محصولات</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll text-right" href="gallery.html">گالری</a>
+                    </li>
+                   <li>
+                        <a class="page-scroll text-right" href="custom flower.html">گل های سفارشی</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll text-right" href="news.html">اخبار</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll text-right" href="know about.html">دانستنی ها</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+            
+            <div class="navbar-header col-sm-1">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top" id="brand">
+                 
+                    <img src="img/nature61.png" id="nature2" alt="brand"/>
+                    <img src="img/nature60.png" id="nature1" alt="brand"/>
+                    
+               
+                </a>
+                 </div>
+            </div>
+            
+        </div>
+        <!-- /.container -->
+    </nav>
+
+	<div class="container" style="margin-top:130px;">
+    	<div class="row">
+        	<article class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            	<header>گل</header>
+                <figure>
+                	<img src="img/flower's types/3.jpg" alt="flower" class="img-responsive col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+                    <figcaption>
+                        <p>این گل زیبا در نواحی کویری به خوبی رشده می کند و در اثر رطوبت زیاد دچار..</p>  
+                    </figcaption>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    	<button type="button" class="btn btn-default col-lg-6 col-lg-offset-3" data-toggle="modal" data-target="#myModal">ادامه مطلب</button>
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">گل</h4>
+      </div>
+      <div class="modal-body">
+        این گل زیبا در نواحی کویری به خوبی رشده می کند و در اثر رطوبت زیاد دچار به سرعت دچار پلاسیدگی مس شود که به همین دلیل نگهداری آن در شهرهایی مانند تهران نیازمند رسیدگی فراوان می باشد<br>
+        این گیاه در 3 ماه دوم سال یعنی فصل بهار گل های زیبایی می دهد که بعد از این مدت ریخته می شوند تا سال بعد اما در طول این مدت گیاه سرسبزی خود را حفظ می کند<br>
+        همچنین نگه داری این گیاه در خانه برای افرادی که دچار بیماری آسم هستند بسیار مفید می باشد.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">بستن</button>
+      </div>
+    </div>
+  </div>
+</div>
+                    </div>
+                </figure>
+            </article>
+            <article class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            	<header>گل</header>
+                <figure>
+                	<img src="img/flower's types/7.jpg" alt="flower" class="img-responsive col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+                    <figcaption>
+                        <p>این گل زیبا در نواحی کویری به خوبی رشده می کند و در اثر رطوبت زیاد دچار..</p>  
+                    </figcaption>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    	<button type="button" class="btn btn-default col-lg-6 col-lg-offset-3" data-toggle="modal" data-target="#myModal2">ادامه مطلب</button>
+                        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel2">گل</h4>
+      </div>
+      <div class="modal-body">
+        این گل زیبا در نواحی کویری به خوبی رشده می کند و در اثر رطوبت زیاد دچار به سرعت دچار پلاسیدگی مس شود که به همین دلیل نگهداری آن در شهرهایی مانند تهران نیازمند رسیدگی فراوان می باشد<br>
+        این گیاه در 3 ماه دوم سال یعنی فصل بهار گل های زیبایی می دهد که بعد از این مدت ریخته می شوند تا سال بعد اما در طول این مدت گیاه سرسبزی خود را حفظ می کند<br>
+        همچنین نگه داری این گیاه در خانه برای افرادی که دچار بیماری آسم هستند بسیار مفید می باشد.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">بستن</button>
+      </div>
+    </div>
+  </div>
+</div>
+                    </div>
+                </figure>
+            </article>
+            <article class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            	<header>گل</header>
+                <figure>
+                	<img src="img/flower's types/10.jpg" alt="flower" class="img-responsive col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+                    <figcaption>
+                        <p>این گل زیبا در نواحی کویری به خوبی رشده می کند و در اثر رطوبت زیاد دچار..</p>  
+                    </figcaption>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    	<button type="button" class="btn btn-default col-lg-6 col-lg-offset-3" data-toggle="modal" data-target="#myModal3">ادامه مطلب</button>
+                        <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel3">گل</h4>
+      </div>
+      <div class="modal-body">
+        این گل زیبا در نواحی کویری به خوبی رشده می کند و در اثر رطوبت زیاد دچار به سرعت دچار پلاسیدگی مس شود که به همین دلیل نگهداری آن در شهرهایی مانند تهران نیازمند رسیدگی فراوان می باشد<br>
+        این گیاه در 3 ماه دوم سال یعنی فصل بهار گل های زیبایی می دهد که بعد از این مدت ریخته می شوند تا سال بعد اما در طول این مدت گیاه سرسبزی خود را حفظ می کند<br>
+        همچنین نگه داری این گیاه در خانه برای افرادی که دچار بیماری آسم هستند بسیار مفید می باشد.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">بستن</button>
+      </div>
+    </div>
+  </div>
+</div>
+                    </div>
+                </figure>
+            </article>
+        </div>
+        <div class="row">
+        	<article class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            	<header>گل</header>
+                <figure>
+                	<img src="img/flower's types/16.jpeg" alt="flower" class="img-responsive col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+                    <figcaption>
+                        <p>این گل زیبا در نواحی کویری به خوبی رشده می کند و در اثر رطوبت زیاد دچار..</p>  
+                    </figcaption>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    	<button type="button" class="btn btn-default col-lg-6 col-lg-offset-3" data-toggle="modal" data-target="#myModal4">ادامه مطلب</button>
+                        <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel4">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel4">گل</h4>
+      </div>
+      <div class="modal-body">
+        این گل زیبا در نواحی کویری به خوبی رشده می کند و در اثر رطوبت زیاد دچار به سرعت دچار پلاسیدگی مس شود که به همین دلیل نگهداری آن در شهرهایی مانند تهران نیازمند رسیدگی فراوان می باشد<br>
+        این گیاه در 3 ماه دوم سال یعنی فصل بهار گل های زیبایی می دهد که بعد از این مدت ریخته می شوند تا سال بعد اما در طول این مدت گیاه سرسبزی خود را حفظ می کند<br>
+        همچنین نگه داری این گیاه در خانه برای افرادی که دچار بیماری آسم هستند بسیار مفید می باشد.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">بستن</button>
+      </div>
+    </div>
+  </div>
+</div>
+                    </div>
+                </figure>
+            </article>
+            <article class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            	<header>گل</header>
+                <figure>
+                	<img src="img/flower's types/29.jpg" alt="flower" class="img-responsive col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+                    <figcaption>
+                        <p>این گل زیبا در نواحی کویری به خوبی رشده می کند و در اثر رطوبت زیاد دچار..</p>  
+                    </figcaption>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    	<button type="button" class="btn btn-default col-lg-6 col-lg-offset-3" data-toggle="modal" data-target="#myModal5">ادامه مطلب</button>
+                        <div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel5">گل</h4>
+      </div>
+      <div class="modal-body">
+        این گل زیبا در نواحی کویری به خوبی رشده می کند و در اثر رطوبت زیاد دچار به سرعت دچار پلاسیدگی مس شود که به همین دلیل نگهداری آن در شهرهایی مانند تهران نیازمند رسیدگی فراوان می باشد<br>
+        این گیاه در 3 ماه دوم سال یعنی فصل بهار گل های زیبایی می دهد که بعد از این مدت ریخته می شوند تا سال بعد اما در طول این مدت گیاه سرسبزی خود را حفظ می کند<br>
+        همچنین نگه داری این گیاه در خانه برای افرادی که دچار بیماری آسم هستند بسیار مفید می باشد.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">بستن</button>
+      </div>
+    </div>
+  </div>
+</div>
+                    </div>
+                </figure>
+            </article>
+            <article class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            	<header>گل</header>
+                <figure>
+                	<img src="img/flower's types/34.jpg" alt="flower" class="img-responsive col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+                    <figcaption>
+                        <p>این گل زیبا در نواحی کویری به خوبی رشده می کند و در اثر رطوبت زیاد دچار..</p>  
+                    </figcaption>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    	<button type="button" class="btn btn-default col-lg-6 col-lg-offset-3" data-toggle="modal" data-target="#myModal6">ادامه مطلب</button>
+                        <div class="modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel6">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel6">گل</h4>
+      </div>
+      <div class="modal-body">
+        این گل زیبا در نواحی کویری به خوبی رشده می کند و در اثر رطوبت زیاد دچار به سرعت دچار پلاسیدگی مس شود که به همین دلیل نگهداری آن در شهرهایی مانند تهران نیازمند رسیدگی فراوان می باشد<br>
+        این گیاه در 3 ماه دوم سال یعنی فصل بهار گل های زیبایی می دهد که بعد از این مدت ریخته می شوند تا سال بعد اما در طول این مدت گیاه سرسبزی خود را حفظ می کند<br>
+        همچنین نگه داری این گیاه در خانه برای افرادی که دچار بیماری آسم هستند بسیار مفید می باشد.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">بستن</button>
+      </div>
+    </div>
+  </div>
+</div>
+                    </div>
+                </figure>
+            </article>
+        </div>
+    </div>
+
+    <!--pagination--> 
+    <div class="container-fluid">
+    	<div class="row">
+    		<ul class="pagination modal-3 col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 col-sm-lg col-lg-offset-4">
+  				<li><a href="#" class="prev">&laquo</a></li>
+  				<li><a href="#" class="active">1</a></li>
+  				<li> <a href="#">2</a></li>
+  				<li> <a href="#">3</a></li>
+  				<li> <a href="#">4</a></li>
+  				<li> <a href="#">5</a></li>
+  				<li> <a href="#">6</a></li>
+  				<li> <a href="#">7</a></li>
+  				<li> <a href="#">8</a></li>
+  				<li> <a href="#">9</a></li>
+  				<li><a href="#" class="next">&raquo;</a></li>
+			</ul>
+		</div>
+	</div>
+    <!-- Footer -->
+	<footer>
+	<div class="container-fluid" style="margin-top:50px; background-color:rgb(255,246,216);">
+    	<div class="row">
+        	<section style="margin-top:40px;">
+  <ul id="services">
+  <a href="www.facebook.com" target="_blank">
+    <li>
+      <div class="entypo-facebook"></div> 
+    </li>
+  </a>
+  <a href="www.twitter.com" target="_blank">
+    <li>
+      <div class="entypo-twitter"></div>
+      
+    </li>
+  </a>
+  <a href="www.google.com" target="_blank">
+    <li>
+      <div class="entypo-gplus"></div>
+      
+    </li>
+  </a>
+  <a href="www.linkedin.com" target="_blank">
+    <li>
+      <div class="entypo-linkedin"></div>
+      
+    </li>
+  </a>
+  </ul>
+</section>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+	<script src="js/myjs.js"></script>
+    <script src="js/prefixfree.min.js"></script>
+    
+    <script src="js/jquery.easing.min.js"></script>
+	<script src="js/jquery.elevatezoom.js"></script>
+    <!--<script src="js/vote.js"></script>-->
+    
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+	<script src="js/pagination.js"></script>
+	<script>
+		$(document).ready(function(e) {
+			
+
+        });
+	</script>
+    
+
+</body>
+
+</html>
